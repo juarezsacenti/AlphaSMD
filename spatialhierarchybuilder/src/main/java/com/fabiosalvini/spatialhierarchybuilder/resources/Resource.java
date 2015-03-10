@@ -28,8 +28,8 @@ public abstract class Resource {
 		return lvlInstance;
 	}
 	
-	public boolean retrieveHierarchy() {
-		return false;
+	public void setHierarchyLevelInstance(HierarchyLevelInstance lvlInstance) {
+		this.lvlInstance = lvlInstance;
 	}
 	
 	public boolean hasHierarchy() {

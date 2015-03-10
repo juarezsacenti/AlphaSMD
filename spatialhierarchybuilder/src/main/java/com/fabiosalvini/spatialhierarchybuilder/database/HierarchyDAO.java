@@ -8,7 +8,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 import com.fabiosalvini.spatialhierarchybuilder.Entity;
-import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevel;
 import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevelInstance;
 
 public class HierarchyDAO {
