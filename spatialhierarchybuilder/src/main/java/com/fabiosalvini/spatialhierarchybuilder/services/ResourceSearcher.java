@@ -1,10 +1,11 @@
-package com.fabiosalvini.spatialhierarchybuilder;
+package com.fabiosalvini.spatialhierarchybuilder.services;
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.logging.Logger;
 
+import com.fabiosalvini.spatialhierarchybuilder.Entity;
 import com.fabiosalvini.spatialhierarchybuilder.datasets.Dataset;
 import com.fabiosalvini.spatialhierarchybuilder.resources.Resource;
 import com.fabiosalvini.spatialhierarchybuilder.resources.ResourceFactory;
@@ -17,9 +18,9 @@ import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
-public class Searcher {
+public class ResourceSearcher {
 	
-	private static final Logger LOG = Logger.getLogger(Searcher.class.getName());
+	private static final Logger LOG = Logger.getLogger(ResourceSearcher.class.getName());
 	
 	public static Set<Resource> findSameAs(Resource r) {
 		Set<Resource> resources = findSameAs(r, r.getDataset(), false);
@@ -66,7 +67,7 @@ public class Searcher {
 			    while(results.hasNext()) {
 			    	QuerySolution row = results.next();
 			    	RDFNode node = row.get("r");
-			    	Resource foundRes = ResourceFactory.getResource(r.getIdresource(),node.toString()); //TODO: change id resource
+			    	Resource foundRes = ResourceFactory.getResource(node.toString());
 			    	if(foundRes != null) {
 			    		//Update Statistics
 			    		if(reversed) {
@@ -87,5 +88,29 @@ public class Searcher {
 			}
 		}
 		return resources;
+	}
+	
+	public static int findResources(Entity e) {
+		Set<Resource> resources = e.getResources();
+		int oldResSize = resources.size();
+		findResources(resources, resources);
+		return resources.size() - oldResSize;
+	}
+	
+	
+	private static void findResources(Set<Resource> resources, Set<Resource> resSet) {
+		Set<Resource> newResources = new HashSet<Resource>();
+		for(Resource r: resSet) {
+			Set<Resource> searchRes = ResourceSearcher.findSameAs(r);
+			for(Resource foundR : searchRes) {
+				if(!resources.contains(foundR)) {
+					newResources.add(foundR);
+				}
+			}
+		}
+		resources.addAll(newResources);
+		if(newResources.size() > 0) {
+			findResources(resources, newResources);
+		}
 	}
 }

@@ -4,6 +4,10 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.logging.Logger;
 
+/**
+ * Temporary not used.
+ *
+ */
 public class HierarchyManager {
 	
 	private static final Logger LOG = Logger.getLogger(HierarchyManager.class.getName());

@@ -1,30 +1,39 @@
 package com.fabiosalvini.spatialhierarchybuilder.resources;
 
 import com.fabiosalvini.spatialhierarchybuilder.datasets.Dataset;
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevelInstance;
 
 
 public abstract class Resource {
 	
-	private Integer idresource;
 	protected String url;
+	protected HierarchyLevelInstance lvlInstance;
 	
-	public Resource(Integer idresource, String url) {
+	public Resource(String url) {
 		if(url == null || url.equals("")) {
 			throw new IllegalArgumentException("Error creating Resource: url cannot be empty!");
 		}
-		this.idresource = idresource;
 		this.url = url;
 	}
 
-	public Integer getIdresource() {
-		return idresource;
-	}
 	public String getUrl() {
 		return url;
 	}
 
 	public void setUrl(String url) {
 		this.url = url;
+	}
+	
+	public HierarchyLevelInstance getHierarchyLevelInstance() {
+		return lvlInstance;
+	}
+	
+	public boolean retrieveHierarchy() {
+		return false;
+	}
+	
+	public boolean hasHierarchy() {
+		return lvlInstance != null;
 	}
 	
 	public abstract Dataset getDataset();

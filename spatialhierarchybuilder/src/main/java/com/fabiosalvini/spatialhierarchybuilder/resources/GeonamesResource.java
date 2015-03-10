@@ -16,11 +16,9 @@ public class GeonamesResource extends Resource {
 	
 	private static final Logger LOG = Logger.getLogger(GeonamesResource.class.getName());
 	private static Pattern idPattern = Pattern.compile("geonames.org/([^/]*)/");
-	
-	private HierarchyLevelInstance lvlInstance;
 
-	public GeonamesResource(Integer idresource, String url) {
-		super(idresource, url);
+	public GeonamesResource(String url) {
+		super(url);
 	}
 
 	@Override
@@ -28,6 +26,7 @@ public class GeonamesResource extends Resource {
 		return GeonamesDataset.getSingleton();
 	}
 	
+	@Override
 	public boolean retrieveHierarchy() {
 		String geonameId = GeonamesResource.getGeonameId(url);
 		if(geonameId == null || geonameId.equals("")) {
@@ -43,22 +42,8 @@ public class GeonamesResource extends Resource {
 		}
         Gson gson = new Gson();        
         GeonamesHierarchyJSON hierarchy = gson.fromJson(json, GeonamesHierarchyJSON.class);
-        lvlInstance = hierarchy.getLowestLevel();
+        lvlInstance = hierarchy.getLowestLevel().getParent(); //Discard the level representing the resource itself
 		return true;
-	}
-	
-	public void printHierarchy() {
-		System.out.println("Hierarchy for: "+url);
-		HierarchyLevelInstance cursor = lvlInstance.getParent();
-		while(cursor != null) {
-			System.out.println(cursor.getLevel().getName() + " " + cursor.getName());
-			cursor = cursor.getParent();
-		}
-		
-	}
-	
-	public HierarchyLevelInstance getHierarchyLevelInstance() {
-		return lvlInstance.getParent();
 	}
 	
 	private static String getGeonameId(String url) {

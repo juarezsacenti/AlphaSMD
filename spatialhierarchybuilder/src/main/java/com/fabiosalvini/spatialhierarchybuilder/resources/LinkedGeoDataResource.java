@@ -6,8 +6,8 @@ import com.fabiosalvini.spatialhierarchybuilder.datasets.LinkedGeoDataDataset;
 
 public class LinkedGeoDataResource extends Resource {
 
-	public LinkedGeoDataResource(Integer idresource, String url) {
-		super(idresource, url);
+	public LinkedGeoDataResource(String url) {
+		super(url);
 	}
 
 	@Override

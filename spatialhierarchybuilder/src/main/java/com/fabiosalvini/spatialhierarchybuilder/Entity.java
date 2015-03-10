@@ -1,23 +1,53 @@
 package com.fabiosalvini.spatialhierarchybuilder;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.logging.Logger;
 
 import com.fabiosalvini.spatialhierarchybuilder.resources.Resource;
 
 public class Entity {
 	
-	private static final Logger LOG = Logger.getLogger(App.class.getName());
-	
+	private Integer id;
 	private String label;
+	private Double latitude;
+	private Double longitude;
 	Set<Resource> resources;
 
-	public Entity(String label) {
+	public Entity(Integer id, String label) {
+		if(id == null || label == null) {
+			throw new IllegalArgumentException("Error creating Entity: parameters cannot be empty!");
+		}
+		this.id = id;
 		this.label = label;
 		resources = new HashSet<Resource>();
 	}
+	
 
+	public Double getLatitude() {
+		return latitude;
+	}
+
+
+	public void setLatitude(Double latitude) {
+		this.latitude = latitude;
+	}
+
+
+	public Double getLongitude() {
+		return longitude;
+	}
+
+
+	public void setLongitude(Double longitude) {
+		this.longitude = longitude;
+	}
+
+
+	public Integer getId() {
+		return id;
+	}
+	
 	public String getLabel() {
 		return label;
 	}
@@ -26,26 +56,12 @@ public class Entity {
 		resources.add(r);
 	}
 	
-	public int findResources() {
-		int oldResSize = resources.size();
-		findResources(resources);
-		return resources.size() - oldResSize;
+	public void addResources(Collection<Resource> r) {
+		resources.addAll(r);
 	}
-	
-	private void findResources(Set<Resource> resSet) {
-		Set<Resource> newResources = new HashSet<Resource>();
-		for(Resource r: resSet) {
-			Set<Resource> searchRes = Searcher.findSameAs(r);
-			for(Resource foundR : searchRes) {
-				if(!resources.contains(foundR)) {
-					newResources.add(foundR);
-				}
-			}
-		}
-		resources.addAll(newResources);
-		if(newResources.size() > 0) {
-			findResources(newResources);
-		}
+
+	public Set<Resource> getResources() {
+		return resources;
 	}
 
 }

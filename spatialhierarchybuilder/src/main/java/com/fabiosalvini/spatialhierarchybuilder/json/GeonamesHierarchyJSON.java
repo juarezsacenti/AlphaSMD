@@ -27,11 +27,11 @@ public class GeonamesHierarchyJSON {
 			Entry e = geonames[i];
 			HierarchyLevel level;
 			if(parent == null) {
-				level = HierarchyManager.getSingleton().getLevel(e.getFcode(), null);
+				level = new HierarchyLevel(e.getFcode(), null);
 			} else {
-				level = HierarchyManager.getSingleton().getLevel(e.getFcode(), parent.getLevel());
+				level = new HierarchyLevel(e.getFcode(), parent.getLevel());
 			}
-			parent = HierarchyManager.getSingleton().getLevelInstance(e.getName(), level, parent);
+			parent = new HierarchyLevelInstance(e.getName(), level, parent);
 		}
 		return parent;
 	}

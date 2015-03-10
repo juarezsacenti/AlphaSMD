@@ -17,11 +17,9 @@ import com.hp.hpl.jena.rdf.model.RDFNode;
 
 
 public class GADMResource extends Resource {
-	
-	private HierarchyLevelInstance lvlInstance;
 
-	public GADMResource(Integer idresource, String url) {
-		super(idresource, url);
+	public GADMResource(String url) {
+		super(url);
 	}
 
 	@Override
@@ -29,6 +27,7 @@ public class GADMResource extends Resource {
 		return GADMDataset.getSingleton();
 	}
 	
+	@Override
 	public boolean retrieveHierarchy() {
 		Model model = ModelFactory.createDefaultModel();
         model.read(url);
@@ -47,29 +46,19 @@ public class GADMResource extends Resource {
         Collections.sort(levels);
         HierarchyLevel hl = null;
         for(Level l : levels) {
-        	hl = HierarchyManager.getSingleton().getLevel(l.level, hl);
-        	lvlInstance = HierarchyManager.getSingleton().getLevelInstance(l.label, hl, lvlInstance);
+        	hl = new HierarchyLevel(l.level, hl);
+        	lvlInstance = new HierarchyLevelInstance(l.label, hl, lvlInstance);
         }
 		return true;
 	}
 	
-	public void printHierarchy() {
-		System.out.println("Hierarchy for: "+url);
-		HierarchyLevelInstance cursor = lvlInstance;
-		while(cursor != null) {
-			System.out.println(cursor.getLevel().getName() + " " + cursor.getName());
-			cursor = cursor.getParent();
-		}
-		
-	}
-	
-	public HierarchyLevelInstance getHierarchyLevelInstance() {
-		return lvlInstance;
-	}
-	
 	public Level getLevel(String url) {
 		Model model = ModelFactory.createDefaultModel();
-        model.read(url);
+		try {
+			model.read(url);
+		} catch(Exception e) {
+			return null;
+		}
         Property pLabel = model.getProperty("http://www.w3.org/2000/01/rdf-schema#label");
         Property pTypes = model.getProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type");
         Iterator<RDFNode> labelIter = model.listObjectsOfProperty(pLabel);
