@@ -4,98 +4,164 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Types;
-import java.util.LinkedList;
-import java.util.List;
 
 import com.fabiosalvini.spatialhierarchybuilder.Entity;
-import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevelInstance;
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.Hierarchy;
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyElement;
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevel;
 
 public class HierarchyDAO {
 
 	public HierarchyDAO() {
 	}
 	
-	public void saveHierarchy(Entity e, HierarchyLevelInstance hli) throws Exception {
+	public void createHierarchy(Entity e) throws Exception {
 		Connection con = DBAccess.getConnection();
-		List<HierarchyLevelInstance> hliList = new LinkedList<HierarchyLevelInstance>();
-		while(hli != null) {
-			hliList.add(0, hli);
-			hli = hli.getParent();
+        String query = "select * from hierarchy where idposition=?";
+        PreparedStatement ps = con.prepareStatement(query);
+        ps.setInt(1, e.getId());
+        ResultSet rs = ps.executeQuery();
+        if (rs.next()) {
+        	return;
+        } else {
+        	String queryInsert = "insert into hierarchy (idposition) values(?)";
+	        PreparedStatement psInsert = con.prepareStatement(queryInsert);
+	        psInsert.setInt(1, e.getId());
+	        psInsert.executeUpdate();
+        }
+	}
+	
+	public void saveHierarchy(Entity e) throws Exception {
+		Connection con = DBAccess.getConnection();
+		Hierarchy h = e.getHierarchy();
+		if(h == null || h.isEmpty()) {
+			return;
 		}
-		Integer elementId = null;
-		Integer levelId = null;
-		for(HierarchyLevelInstance element : hliList) {
-			levelId = getHierarchyLevelId(con, element.getLevel().getName(), levelId);
-			elementId = getHierarchyLevelInstanceId(con, element.getName(), levelId, elementId);
-		}
-		String query = "INSERT INTO position_hlevel_instance (idposition,idhlevel_instance) VALUES (?,?)";
+		createHierarchy(e);
+		String query = "UPDATE hierarchy SET continent=?,country=?,admn1=?,admn2=?,admn3=?,admn4=?,admn5=?,city=?,address=? WHERE idposition=?";
 		PreparedStatement ps = con.prepareStatement(query);
-		ps.setInt(1, e.getId());
-		ps.setInt(2, elementId);
+		HierarchyElement elem;
+		elem = h.getElementAtLevel(HierarchyLevel.CONTINENT);
+		if(elem != null) {
+			ps.setString(1, elem.getName());
+		} else {
+			ps.setNull(1, Types.NULL);
+		}
+		elem = h.getElementAtLevel(HierarchyLevel.COUNTRY);
+		if(elem != null) {
+			ps.setString(2, elem.getName());
+		} else {
+			ps.setNull(2, Types.NULL);
+		}
+		elem = h.getElementAtLevel(HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_1);
+		if(elem != null) {
+			ps.setString(3, elem.getName());
+		} else {
+			ps.setNull(3, Types.NULL);
+		}
+		elem = h.getElementAtLevel(HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_2);
+		if(elem != null) {
+			ps.setString(4, elem.getName());
+		} else {
+			ps.setNull(4, Types.NULL);
+		}
+		elem = h.getElementAtLevel(HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_3);
+		if(elem != null) {
+			ps.setString(5, elem.getName());
+		} else {
+			ps.setNull(5, Types.NULL);
+		}
+		elem = h.getElementAtLevel(HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_4);
+		if(elem != null) {
+			ps.setString(6, elem.getName());
+		} else {
+			ps.setNull(6, Types.NULL);
+		}
+		elem = h.getElementAtLevel(HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_5);
+		if(elem != null) {
+			ps.setString(7, elem.getName());
+		} else {
+			ps.setNull(7, Types.NULL);
+		}
+		elem = h.getElementAtLevel(HierarchyLevel.CITY);
+		if(elem != null) {
+			ps.setString(8, elem.getName());
+		} else {
+			ps.setNull(8, Types.NULL);
+		}
+		elem = h.getElementAtLevel(HierarchyLevel.ADDRESS);
+		if(elem != null) {
+			ps.setString(9, elem.getName());
+		} else {
+			ps.setNull(9, Types.NULL);
+		}
+		ps.setInt(10, e.getId());
 		ps.executeUpdate();
         con.close();
 	}
 	
-	public int getHierarchyLevelId(Connection con, String name, Integer parentId) throws Exception {
-		String query;
-		if(parentId != null) {
-			query = "SELECT idhierarchy_level FROM hierarchy_level WHERE name=? AND parent_hierarchy_level=?";
-		} else {
-			query = "SELECT idhierarchy_level FROM hierarchy_level WHERE name=? AND parent_hierarchy_level IS NULL";
+	public Hierarchy getHierarchy(Entity e) {
+		Hierarchy hierarchy = new Hierarchy();
+		if(e == null) {
+			return null;
 		}
-		PreparedStatement ps = con.prepareStatement(query);
-		ps.setString(1, name);
-		if(parentId != null) {
-			ps.setInt(2, parentId);
+		try (Connection con = DBAccess.getConnection()) {
+	        String query = "select * from hierarchy where idresource=";
+	        PreparedStatement ps = con.prepareStatement(query);
+	        ps.setInt(1, e.getId());
+	        ResultSet rs = ps.executeQuery();
+	        if (rs.next()) {
+	        	String continent = rs.getString("continent");
+	        	if(continent != null) {
+	        		HierarchyElement elem = new HierarchyElement(continent,HierarchyLevel.CONTINENT);
+	        		hierarchy.addHierarchyElement(elem);
+	        	}
+	        	String country = rs.getString("country");
+	        	if(country != null) {
+	        		HierarchyElement elem = new HierarchyElement(country,HierarchyLevel.COUNTRY);
+	        		hierarchy.addHierarchyElement(elem);
+	        	}
+	        	String admn1 = rs.getString("admn1");
+	        	if(admn1 != null) {
+	        		HierarchyElement elem = new HierarchyElement(admn1,HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_1);
+	        		hierarchy.addHierarchyElement(elem);
+	        	}
+	        	String admn2 = rs.getString("admn2");
+	        	if(admn2 != null) {
+	        		HierarchyElement elem = new HierarchyElement(admn2,HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_2);
+	        		hierarchy.addHierarchyElement(elem);
+	        	}
+	        	String admn3 = rs.getString("admn3");
+	        	if(admn3 != null) {
+	        		HierarchyElement elem = new HierarchyElement(admn3,HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_3);
+	        		hierarchy.addHierarchyElement(elem);
+	        	}
+	        	String admn4 = rs.getString("admn4");
+	        	if(admn4 != null) {
+	        		HierarchyElement elem = new HierarchyElement(admn4,HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_4);
+	        		hierarchy.addHierarchyElement(elem);
+	        	}
+	        	String admn5 = rs.getString("admn5");
+	        	if(admn5 != null) {
+	        		HierarchyElement elem = new HierarchyElement(admn1,HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_5);
+	        		hierarchy.addHierarchyElement(elem);
+	        	}
+	        	String city = rs.getString("city");
+	        	if(city != null) {
+	        		HierarchyElement elem = new HierarchyElement(city,HierarchyLevel.CITY);
+	        		hierarchy.addHierarchyElement(elem);
+	        	}
+	        	String address = rs.getString("address");
+	        	if(address != null) {
+	        		HierarchyElement elem = new HierarchyElement(address,HierarchyLevel.ADDRESS);
+	        		hierarchy.addHierarchyElement(elem);
+	        	}
+	        	
+	        }
+	        con.close();
+		} catch(Exception ex) {
 		}
-		ResultSet rs = ps.executeQuery();
-        if (rs.next()) {
-        	return rs.getInt("idhierarchy_level");
-        	
-        }
-        query = "INSERT INTO hierarchy_level (name, parent_hierarchy_level) VALUES (?,?)";
-        ps = con.prepareStatement(query);
-        ps.setString(1, name);
-        if(parentId != null) {
-			ps.setInt(2, parentId);
-		} else {
-			ps.setNull(2, Types.NULL);
-		}
-        ps.executeUpdate();
-        
-        return getHierarchyLevelId(con, name, parentId);
-	}
-	
-	public int getHierarchyLevelInstanceId(Connection con, String name, Integer levelId, Integer parentId) throws Exception {
-		String query;
-		if(parentId != null) {
-			query = "SELECT idhlevel_instance FROM hlevel_instance WHERE name=? AND idhierarchy_level=? AND parent_hlevel_instance=?";
-		} else {
-			query = "SELECT idhlevel_instance FROM hlevel_instance WHERE name=? AND idhierarchy_level=? AND parent_hlevel_instance IS NULL";
-		}
-		PreparedStatement ps = con.prepareStatement(query);
-		ps.setString(1, name);
-		ps.setInt(2,levelId);
-		if(parentId != null) {
-			ps.setInt(3, parentId);
-		}
-		ResultSet rs = ps.executeQuery();
-        if (rs.next()) {
-        	return rs.getInt("idhlevel_instance");
-        	
-        }
-        query = "INSERT INTO hlevel_instance (name,idhierarchy_level,parent_hlevel_instance) VALUES (?,?,?)";
-        ps = con.prepareStatement(query);
-        ps.setString(1, name);
-        ps.setInt(2,levelId);
-        if(parentId != null) {
-			ps.setInt(3, parentId);
-		} else {
-			ps.setNull(3, Types.NULL);
-		}
-        ps.executeUpdate();
-        
-        return getHierarchyLevelInstanceId(con, name, levelId, parentId);
+        return hierarchy;
 	}
 
 }

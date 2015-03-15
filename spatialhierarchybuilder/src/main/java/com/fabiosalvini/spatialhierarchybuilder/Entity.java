@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.Hierarchy;
 import com.fabiosalvini.spatialhierarchybuilder.resources.Resource;
 
 public class Entity {
@@ -13,6 +14,7 @@ public class Entity {
 	private Double latitude;
 	private Double longitude;
 	Set<Resource> resources;
+	Hierarchy hierarchy;
 
 	public Entity(Integer id, String label) {
 		if(id == null || label == null) {
@@ -21,6 +23,7 @@ public class Entity {
 		this.id = id;
 		this.label = label;
 		resources = new HashSet<Resource>();
+		hierarchy = new Hierarchy();
 	}
 	
 
@@ -62,6 +65,14 @@ public class Entity {
 
 	public Set<Resource> getResources() {
 		return resources;
+	}
+	
+	public void setHierarchy(Hierarchy hierarchy) {
+		this.hierarchy = hierarchy;
+	}
+	
+	public Hierarchy getHierarchy() {
+		return hierarchy;
 	}
 
 }

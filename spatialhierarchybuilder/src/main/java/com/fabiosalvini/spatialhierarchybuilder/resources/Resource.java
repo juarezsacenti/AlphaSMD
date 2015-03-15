@@ -1,13 +1,11 @@
 package com.fabiosalvini.spatialhierarchybuilder.resources;
 
 import com.fabiosalvini.spatialhierarchybuilder.datasets.Dataset;
-import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevelInstance;
 
 
 public abstract class Resource {
 	
 	protected String url;
-	protected HierarchyLevelInstance lvlInstance;
 	
 	public Resource(String url) {
 		if(url == null || url.equals("")) {
@@ -22,18 +20,6 @@ public abstract class Resource {
 
 	public void setUrl(String url) {
 		this.url = url;
-	}
-	
-	public HierarchyLevelInstance getHierarchyLevelInstance() {
-		return lvlInstance;
-	}
-	
-	public void setHierarchyLevelInstance(HierarchyLevelInstance lvlInstance) {
-		this.lvlInstance = lvlInstance;
-	}
-	
-	public boolean hasHierarchy() {
-		return lvlInstance != null;
 	}
 	
 	public abstract Dataset getDataset();

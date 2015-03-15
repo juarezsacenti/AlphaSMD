@@ -1,52 +1,31 @@
 package com.fabiosalvini.spatialhierarchybuilder.hierarchies;
 
-public final class HierarchyLevel {
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
+public enum HierarchyLevel {
+	CONTINENT, 
+	COUNTRY, 
+	ADMINISTRATIVE_AREA_LEVEL_1, 
+	ADMINISTRATIVE_AREA_LEVEL_2, 
+	ADMINISTRATIVE_AREA_LEVEL_3, 
+	ADMINISTRATIVE_AREA_LEVEL_4, 
+	ADMINISTRATIVE_AREA_LEVEL_5,
+	CITY,
+	ADDRESS;
 	
-	private String name;
-	private HierarchyLevel parent;
-	
-	public HierarchyLevel(String name, HierarchyLevel parent) {
-		this.name = name;
-		this.parent = parent;
+	public static Collection<HierarchyLevel> getAllLevels() {
+		Set<HierarchyLevel> levels = new HashSet<HierarchyLevel>();
+		levels.add(CONTINENT);
+		levels.add(COUNTRY);
+		levels.add(ADMINISTRATIVE_AREA_LEVEL_1);
+		levels.add(ADMINISTRATIVE_AREA_LEVEL_2);
+		levels.add(ADMINISTRATIVE_AREA_LEVEL_3);
+		levels.add(ADMINISTRATIVE_AREA_LEVEL_4);
+		levels.add(ADMINISTRATIVE_AREA_LEVEL_5);
+		levels.add(CITY);
+		levels.add(ADDRESS);
+		return levels;
 	}
-
-	public String getName() {
-		return name;
-	}
-
-	public HierarchyLevel getParent() {
-		return parent;
-	}
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		result = prime * result + ((parent == null) ? 0 : parent.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		HierarchyLevel other = (HierarchyLevel) obj;
-		if (name == null) {
-			if (other.name != null)
-				return false;
-		} else if (!name.equals(other.name))
-			return false;
-		if (parent == null) {
-			if (other.parent != null)
-				return false;
-		} else if (!parent.equals(other.parent))
-			return false;
-		return true;
-	}
-
 }

@@ -3,6 +3,8 @@ package com.fabiosalvini.spatialhierarchybuilder.datasets;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevel;
+
 public class DbpediaDataset implements Dataset {
 	
 	public static final String DOMAIN = "dbpedia.org";
@@ -37,6 +39,16 @@ public class DbpediaDataset implements Dataset {
 
 	public Set<Dataset> getLinkedByDatasets() {
 		return LINKEDBY_DATASETS;
+	}
+
+	@Override
+	public Set<HierarchyLevel> getHierarchyLevels() {
+		return new HashSet<HierarchyLevel>();
+	}
+
+	@Override
+	public HierarchyLevel getHierarchyLevelFromName(String name) {
+		return null;
 	}
 
 }

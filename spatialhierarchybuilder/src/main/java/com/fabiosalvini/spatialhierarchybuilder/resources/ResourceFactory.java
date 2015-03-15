@@ -29,7 +29,8 @@ public class ResourceFactory {
 			r =  new GeonamesResource(url);
 		}
 		if(url.contains(LinkedGeoDataDataset.DOMAIN)) {
-			r =  new LinkedGeoDataResource(url);
+			String modUrl = url.replace(".org/triplify", ".org/data/triplify")+"?output=xml";
+			r =  new LinkedGeoDataResource(modUrl);
 		}
 		if(url.contains(GADMDataset.DOMAIN)) {
 			r = new GADMResource(url);

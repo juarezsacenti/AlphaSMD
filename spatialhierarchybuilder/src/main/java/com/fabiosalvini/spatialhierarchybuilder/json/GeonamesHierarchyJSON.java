@@ -1,8 +1,11 @@
 package com.fabiosalvini.spatialhierarchybuilder.json;
 
+import java.util.Collection;
+import java.util.HashSet;
+
+import com.fabiosalvini.spatialhierarchybuilder.datasets.GeonamesDataset;
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyElement;
 import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevel;
-import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevelInstance;
-import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyManager;
 
 public class GeonamesHierarchyJSON {
 	
@@ -21,19 +24,17 @@ public class GeonamesHierarchyJSON {
 		return str;
 	}
 	
-	public HierarchyLevelInstance getLowestLevel() {
-		HierarchyLevelInstance parent = null;
+	public Collection<HierarchyElement> getHierarchyElements() {
+		Collection<HierarchyElement> elements = new HashSet<HierarchyElement>();
 		for(int i = 0; i < geonames.length; i++) {
 			Entry e = geonames[i];
-			HierarchyLevel level;
-			if(parent == null) {
-				level = new HierarchyLevel(e.getFcode(), null);
-			} else {
-				level = new HierarchyLevel(e.getFcode(), parent.getLevel());
+			HierarchyLevel level = GeonamesDataset.getSingleton().getHierarchyLevelFromName(e.getFcode());
+			if(level != null) {
+				HierarchyElement elem = new HierarchyElement(e.getName(), level);
+				elements.add(elem);
 			}
-			parent = new HierarchyLevelInstance(e.getName(), level, parent);
 		}
-		return parent;
+		return elements;
 	}
 
 }

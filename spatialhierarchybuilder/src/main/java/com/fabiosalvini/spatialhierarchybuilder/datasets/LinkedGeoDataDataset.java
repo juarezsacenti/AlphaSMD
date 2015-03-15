@@ -3,6 +3,8 @@ package com.fabiosalvini.spatialhierarchybuilder.datasets;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevel;
+
 public class LinkedGeoDataDataset implements Dataset {
 	
 	public static final String DOMAIN = "linkedgeodata.org";
@@ -38,6 +40,16 @@ public class LinkedGeoDataDataset implements Dataset {
 
 	public String getDomain() {
 		return DOMAIN;
+	}
+
+	@Override
+	public Set<HierarchyLevel> getHierarchyLevels() {
+		return new HashSet<HierarchyLevel>();
+	}
+	
+	@Override
+	public HierarchyLevel getHierarchyLevelFromName(String name) {
+		return null;
 	}
 
 }
