@@ -1,0 +1,1046 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://semovdim.org/rdf#" > 
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1516021989">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1425911514">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1969277168">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1831995414">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1074882933">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1886639038">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/PlaceOfWorship"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Cinema">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1195443957">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Place">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1780531151">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Artifact100021939">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Whole100003553"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1786281067">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Hospital"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Airport102692232">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Airfield102687992"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2031607448">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1070182216">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1719982542">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pub"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Veterinary">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1627027288">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2273202472">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/meta/Node">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1723549968">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Jandu%C3%ADs">
+    <j.0:categoryHierarchy rdf:resource="http://semovdim.org/rdf#missingNode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Mall">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Shop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node270359456">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bakery"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/PopulatedPlacesInAlagoas">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Site108651247"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1864808247">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/School"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/PopulatedPlacesInParaguay">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Site108651247"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2031607455">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1276982866">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node505204985">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Convenience"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node561900053">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/College"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1278853903">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Monument"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1644596549">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1350800736">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bakery"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1974220894">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Site108651247">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Tract108673395"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1724363373">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Marketplace"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1871222200">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Airfield102687992">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Facility103315023"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2141486667">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Igaci">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/PopulatedPlacesInAlagoas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node505534839">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/PlaceOfWorship"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1650835493">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1781934475">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Tower"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1914658931">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Supermarket"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/BanksOfBrazil">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/DepositoryFinancialInstitution108420278"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Area108497294">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Region108630985"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1655890995">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Villa_Florida">
+    <j.0:categoryHierarchy rdf:resource="http://semovdim.org/rdf#missingNode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Facility103315023">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Artifact100021939"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node267054501">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/BusStation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Station">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/ontology/Infrastructure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1643721958">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Ava%C3%AD">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/PopulatedPlacesInS%C3%A3oPaulo(state)"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1594924516">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1256188922">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2073316148">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1833779656">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/BicycleParking"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1751661016">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pub"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1802271607">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1095825223">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Section108648322">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Area108497294"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1990947991">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node572685068">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FuelStation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2116053677">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1532907715">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pub"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1446213389">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2120259493">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1930073279">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2109891092">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1691359452">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Parking"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1599567859">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1108275959">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Toilets"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1080528305">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Supermarket"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1933715103">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2028399867">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1662378166">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/BeverageMarket">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Shop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/School">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1845544933">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cinema"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2132942986">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Townhall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Town">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1840398648">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Group100031264">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Abstraction100002137"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1243922695">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Hospital">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1793787426">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1683609490">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1590328711">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bakery"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2015144491">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FuelStation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1611115067">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1416389196">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1670435113">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/PlaceOfWorship"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/College">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1899269533">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node198440744">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Town"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1057727976">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Hospital"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Abstraction100002137">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Hardware">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Shop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/City">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1665370019">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1828182128">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node640118627">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1546645409">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Parking"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Cafe">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Vista_Alegre_do_Prata">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/PopulatedPlacesInRioGrandeDoSul"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Vila_Isabel">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/NeighbourhoodsInRioDeJaneiro(city)"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node561900077">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/School"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/YagoGeoEntity">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node504709870">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Village">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1781851662">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/BeverageMarket"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1029633390">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pub"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node259203271">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node969885112">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pub"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1671936859">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node817954993">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1933751531">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1724548698">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node959054236">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/PopulatedPlacesInRioGrandeDoSul">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Site108651247"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Whole100003553">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node592565212">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Jabaquara_(S%C3%A3o_Paulo_Metro)">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/ontology/Station"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1889900870">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node631057837">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Institution108053576">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Organization108008335"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node445099761">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2154976300">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/PopulatedPlacesInPiau%C3%AD">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Site108651247"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Townhall">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2003511585">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pub"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Museo_Chileno_de_Arte_Precolombino">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/MuseumsInSantiagoMetropolitanRegion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Pharmacy">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Shop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1774210874">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1110458035">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/ManMadeThing">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1973090340">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node914912280">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Bank">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1267540179">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Supermarket"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Marketplace">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/GeographicalArea108574314">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Region108630985"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node995446030">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1780340332">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Kiosk">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Shop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node834889381">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Parking">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/MuseumsInSantiagoMetropolitanRegion">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Museum103800563"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1949871920">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/PlaceOfWorship"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Bar">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1764262460">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Villa_Constituci%C3%B3n">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/PopulatedPlacesInSantaFeProvince"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1976788237">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/PopulatedPlacesInPara%C3%ADba">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Site108651247"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/FastFood">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node836531939">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Supermarket"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1770530786">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node460200523">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cinema"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node319210845">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1558031108">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1760723313">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bakery"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1751656186">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pub"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node319258499">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Depository103177349">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Facility103315023"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/DepositoryFinancialInstitution108420278">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/FinancialInstitution108054721"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node616060494">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/MuseumsInS%C3%A3oPaulo(city)">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Museum103800563"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Supermarket">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Shop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node837476652">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1223798915">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/BusStation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Pra%C3%A7a_da_%C3%81rvore_(S%C3%A3o_Paulo_Metro)">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/ontology/Station"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1025631405">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node887088346">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pharmacy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2154667622">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pharmacy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1889911022">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1994849393">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1772812410">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2205983550">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pub"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node370485505">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1236624571">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Theatre">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Bakery">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Shop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node283403961">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Town"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2146705956">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bakery"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Tower">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/ManMadeThing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1245887101">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1710648524">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Building">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2101908301">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/meta/Node"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/NeighbourhoodsInRioDeJaneiro(city)">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Vicinity108641113"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Place">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1770073809">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Toilets">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2135167665">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Building"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1645797982">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pub"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1695509111">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1784522640">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2074045680">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/PostOffice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Infrastructure">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/ontology/ArchitecturalStructure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Tract108673395">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/GeographicalArea108574314"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1749200754">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1955887241">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/PopulatedPlacesInSantaFeProvince">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Site108651247"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1092799397">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node313141604">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FuelStation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/HistoricThing">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2057128607">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/BooksShop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1749283155">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1793086589">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1909473841">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node850017813">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node283479121">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FuelStation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1837786548">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1451968443">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Organization108008335">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/SocialGroup107950920"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Amenity">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2024090643">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FuelStation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1481202841">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1219009624">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/San_Estanislao">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/PopulatedPlacesInParaguay"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Afr%C3%A2nio">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/PopulatedPlacesInPernambuco"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Bel%C3%A9m_(S%C3%A3o_Paulo_Metro)">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/ontology/Station"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Central_Bank_of_Brazil">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/BanksOfBrazil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node479234620">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Supermarket"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/BooksShop">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Shop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1142032705">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/BooksShop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node561900060">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/College"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1679928552">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1148328622">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Restaurant">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Region108630985">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Location100027167"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/PopulatedPlacesInPernambuco">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Site108651247"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Vicinity108641113">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Section108648322"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://semovdim.org/rdf#missingNode">
+    <j.0:categoryHierarchy rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <j.0:categoryHierarchy rdf:resource="http://semovdim.org/rdf#missingNode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2262436724">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1095825377">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Presidente_Prudente_Airport">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/AirportsInBrazil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node501253373">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2102048923">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Kiosk"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1831977226">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Convenience">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Shop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Salgadinho,_Para%C3%ADba">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/PopulatedPlacesInPara%C3%ADba"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Monument">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/HistoricThing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node501253461">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cinema"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1871629988">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Brotas">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/PopulatedPlacesInS%C3%A3oPaulo(state)"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1899164771">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bakery"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1540329535">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1721400293">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/CarRepairShop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1139377884">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Hospital"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Location100027167">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/YagoGeoEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1788572242">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/School"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/Museum103800563">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Depository103177349"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1420342934">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pub"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node560417252">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Theatre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1841266827">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1399910247">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1731871384">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1215357803">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/PostOffice">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node415521246">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Town"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1823339959">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1249891105">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Suburb"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1907888324">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Pub"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1889895972">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2073316159">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/AirportsInBrazil">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Airport102692232"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1460566985">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1687825661">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Electronics">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Shop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1240909306">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Parking"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1326985966">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bakery"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1780986127">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Veterinary"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/BusStation">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1837822583">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2146715931">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Marketplace"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2061507070">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Supermarket"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1473305851">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bakery"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Caratinga">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Town"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1080541244">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Village"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/BicycleParking">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Plaza_Baquedano">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Pub">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/PlaceOfWorship">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node613365421">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Supermarket"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1975233229">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1847635577">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1143406597">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Supermarket"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/FuelStation">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node987844722">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Cafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node644535640">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1774092451">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1037953345">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/BusStation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Consola%C3%A7%C3%A3o_(S%C3%A3o_Paulo_Metro)">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/ontology/Station"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/CarRepairShop">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Shop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Museu_Paulista">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/MuseumsInS%C3%A3oPaulo(city)"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Carandiru_(S%C3%A3o_Paulo_Metro)">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/ontology/Station"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node432747429">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/College"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1801176618">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1829971032">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/PlaceOfWorship"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Altos,_Piau%C3%AD">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/PopulatedPlacesInPiau%C3%AD"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2014576875">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1600741832">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Bangu_(neighborhood)">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/NeighbourhoodsInRioDeJaneiro(city)"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2132943048">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Townhall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1745608149">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geonames.org/ontology#Feature">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1649126154">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Electronics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node796040963">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1241276876">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1625630212">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Taxi"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2245524940">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1756884786">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node913442111">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Coquimbo">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/City"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1494285480">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Toilets"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node768959278">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Bar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/ArchitecturalStructure">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/ontology/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Jardim_S%C3%A3o_Paulo-Ayrton_Senna_(S%C3%A3o_Paulo_Metro)">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/ontology/Station"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node139427466">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Santos-Imigrantes_(S%C3%A3o_Paulo_Metro)">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/ontology/Station"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node365743059">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node668931273">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Mall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Plaza_Sotomayor">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Plaza_Yungay">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2125496372">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node628524054">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1832317050">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node415521404">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Town"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node617096995">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Hardware"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1812862202">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/PostOffice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/FinancialInstitution108054721">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Institution108053576"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Suburb">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Taxi">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1350858749">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Theatre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1701422848">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Supermarket"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/SocialGroup107950920">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Group100031264"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node506829810">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/FastFood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2032819894">
+    <j.0:categoryHierarchy rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node2062514481">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/ontology/Shop">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Amenity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/class/yago/PopulatedPlacesInS%C3%A3oPaulo(state)">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/class/yago/Site108651247"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Tatuap%C3%A9_(S%C3%A3o_Paulo_Metro)">
+    <j.0:categoryHierarchy rdf:resource="http://dbpedia.org/ontology/Station"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node445662673">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Restaurant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://linkedgeodata.org/triplify/node1677786959">
+    <j.0:categoryHierarchy rdf:resource="http://linkedgeodata.org/ontology/Supermarket"/>
+  </rdf:Description>
+</rdf:RDF>
