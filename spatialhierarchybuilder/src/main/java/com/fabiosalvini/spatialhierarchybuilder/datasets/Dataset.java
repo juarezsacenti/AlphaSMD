@@ -2,7 +2,8 @@ package com.fabiosalvini.spatialhierarchybuilder.datasets;
 
 import java.util.Set;
 
-import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevel;
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.CatHierarchyLevel;
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.ObjHierarchyLevel;
 
 public interface Dataset {
 
@@ -10,7 +11,8 @@ public interface Dataset {
 	String getSparqlEndpoint();
 	Set<String> getSameAsProperties();
 	Set<Dataset> getLinkedByDatasets();
-	Set<HierarchyLevel> getHierarchyLevels();
-	HierarchyLevel getHierarchyLevelFromName(String name);
-
+	Set<ObjHierarchyLevel> getObjHierarchyLevels();
+	ObjHierarchyLevel getObjHierarchyLevelFromName(String name);
+	Set<CatHierarchyLevel> getCatHierarchyLevels();
+	CatHierarchyLevel getCatHierarchyLevelFromName(String name);
 }

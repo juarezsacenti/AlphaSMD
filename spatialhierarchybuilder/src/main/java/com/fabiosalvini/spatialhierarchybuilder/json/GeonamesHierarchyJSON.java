@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 import com.fabiosalvini.spatialhierarchybuilder.datasets.GeonamesDataset;
 import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyElement;
-import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevel;
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.ObjHierarchyLevel;
 
 public class GeonamesHierarchyJSON {
 	
@@ -28,7 +28,7 @@ public class GeonamesHierarchyJSON {
 		Collection<HierarchyElement> elements = new HashSet<HierarchyElement>();
 		for(int i = 0; i < geonames.length; i++) {
 			Entry e = geonames[i];
-			HierarchyLevel level = GeonamesDataset.getSingleton().getHierarchyLevelFromName(e.getFcode());
+			ObjHierarchyLevel level = GeonamesDataset.getSingleton().getObjHierarchyLevelFromName(e.getFcode());
 			if(level != null) {
 				HierarchyElement elem = new HierarchyElement(e.getName(), level);
 				elements.add(elem);

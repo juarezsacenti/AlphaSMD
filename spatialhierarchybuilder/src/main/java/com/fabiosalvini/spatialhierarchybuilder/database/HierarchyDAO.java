@@ -8,7 +8,7 @@ import java.sql.Types;
 import com.fabiosalvini.spatialhierarchybuilder.Entity;
 import com.fabiosalvini.spatialhierarchybuilder.hierarchies.Hierarchy;
 import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyElement;
-import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevel;
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.ObjHierarchyLevel;
 
 public class HierarchyDAO {
 
@@ -31,9 +31,9 @@ public class HierarchyDAO {
         }
 	}
 	
-	public void saveHierarchy(Entity e) throws Exception {
+	public void saveObjHierarchy(Entity e) throws Exception {
 		Connection con = DBAccess.getConnection();
-		Hierarchy h = e.getHierarchy();
+		Hierarchy h = e.getObjHierarchy();
 		if(h == null || h.isEmpty()) {
 			return;
 		}
@@ -41,55 +41,55 @@ public class HierarchyDAO {
 		String query = "UPDATE hierarchy SET continent=?,country=?,admn1=?,admn2=?,admn3=?,admn4=?,admn5=?,city=?,address=? WHERE idposition=?";
 		PreparedStatement ps = con.prepareStatement(query);
 		HierarchyElement elem;
-		elem = h.getElementAtLevel(HierarchyLevel.CONTINENT);
+		elem = h.getElementAtLevel(ObjHierarchyLevel.CONTINENT);
 		if(elem != null) {
 			ps.setString(1, elem.getName());
 		} else {
 			ps.setNull(1, Types.NULL);
 		}
-		elem = h.getElementAtLevel(HierarchyLevel.COUNTRY);
+		elem = h.getElementAtLevel(ObjHierarchyLevel.COUNTRY);
 		if(elem != null) {
 			ps.setString(2, elem.getName());
 		} else {
 			ps.setNull(2, Types.NULL);
 		}
-		elem = h.getElementAtLevel(HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_1);
+		elem = h.getElementAtLevel(ObjHierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_1);
 		if(elem != null) {
 			ps.setString(3, elem.getName());
 		} else {
 			ps.setNull(3, Types.NULL);
 		}
-		elem = h.getElementAtLevel(HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_2);
+		elem = h.getElementAtLevel(ObjHierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_2);
 		if(elem != null) {
 			ps.setString(4, elem.getName());
 		} else {
 			ps.setNull(4, Types.NULL);
 		}
-		elem = h.getElementAtLevel(HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_3);
+		elem = h.getElementAtLevel(ObjHierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_3);
 		if(elem != null) {
 			ps.setString(5, elem.getName());
 		} else {
 			ps.setNull(5, Types.NULL);
 		}
-		elem = h.getElementAtLevel(HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_4);
+		elem = h.getElementAtLevel(ObjHierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_4);
 		if(elem != null) {
 			ps.setString(6, elem.getName());
 		} else {
 			ps.setNull(6, Types.NULL);
 		}
-		elem = h.getElementAtLevel(HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_5);
+		elem = h.getElementAtLevel(ObjHierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_5);
 		if(elem != null) {
 			ps.setString(7, elem.getName());
 		} else {
 			ps.setNull(7, Types.NULL);
 		}
-		elem = h.getElementAtLevel(HierarchyLevel.CITY);
+		elem = h.getElementAtLevel(ObjHierarchyLevel.CITY);
 		if(elem != null) {
 			ps.setString(8, elem.getName());
 		} else {
 			ps.setNull(8, Types.NULL);
 		}
-		elem = h.getElementAtLevel(HierarchyLevel.ADDRESS);
+		elem = h.getElementAtLevel(ObjHierarchyLevel.ADDRESS);
 		if(elem != null) {
 			ps.setString(9, elem.getName());
 		} else {
@@ -113,47 +113,47 @@ public class HierarchyDAO {
 	        if (rs.next()) {
 	        	String continent = rs.getString("continent");
 	        	if(continent != null) {
-	        		HierarchyElement elem = new HierarchyElement(continent,HierarchyLevel.CONTINENT);
+	        		HierarchyElement elem = new HierarchyElement(continent,ObjHierarchyLevel.CONTINENT);
 	        		hierarchy.addHierarchyElement(elem);
 	        	}
 	        	String country = rs.getString("country");
 	        	if(country != null) {
-	        		HierarchyElement elem = new HierarchyElement(country,HierarchyLevel.COUNTRY);
+	        		HierarchyElement elem = new HierarchyElement(country,ObjHierarchyLevel.COUNTRY);
 	        		hierarchy.addHierarchyElement(elem);
 	        	}
 	        	String admn1 = rs.getString("admn1");
 	        	if(admn1 != null) {
-	        		HierarchyElement elem = new HierarchyElement(admn1,HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_1);
+	        		HierarchyElement elem = new HierarchyElement(admn1,ObjHierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_1);
 	        		hierarchy.addHierarchyElement(elem);
 	        	}
 	        	String admn2 = rs.getString("admn2");
 	        	if(admn2 != null) {
-	        		HierarchyElement elem = new HierarchyElement(admn2,HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_2);
+	        		HierarchyElement elem = new HierarchyElement(admn2,ObjHierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_2);
 	        		hierarchy.addHierarchyElement(elem);
 	        	}
 	        	String admn3 = rs.getString("admn3");
 	        	if(admn3 != null) {
-	        		HierarchyElement elem = new HierarchyElement(admn3,HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_3);
+	        		HierarchyElement elem = new HierarchyElement(admn3,ObjHierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_3);
 	        		hierarchy.addHierarchyElement(elem);
 	        	}
 	        	String admn4 = rs.getString("admn4");
 	        	if(admn4 != null) {
-	        		HierarchyElement elem = new HierarchyElement(admn4,HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_4);
+	        		HierarchyElement elem = new HierarchyElement(admn4,ObjHierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_4);
 	        		hierarchy.addHierarchyElement(elem);
 	        	}
 	        	String admn5 = rs.getString("admn5");
 	        	if(admn5 != null) {
-	        		HierarchyElement elem = new HierarchyElement(admn1,HierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_5);
+	        		HierarchyElement elem = new HierarchyElement(admn1,ObjHierarchyLevel.ADMINISTRATIVE_AREA_LEVEL_5);
 	        		hierarchy.addHierarchyElement(elem);
 	        	}
 	        	String city = rs.getString("city");
 	        	if(city != null) {
-	        		HierarchyElement elem = new HierarchyElement(city,HierarchyLevel.CITY);
+	        		HierarchyElement elem = new HierarchyElement(city,ObjHierarchyLevel.CITY);
 	        		hierarchy.addHierarchyElement(elem);
 	        	}
 	        	String address = rs.getString("address");
 	        	if(address != null) {
-	        		HierarchyElement elem = new HierarchyElement(address,HierarchyLevel.ADDRESS);
+	        		HierarchyElement elem = new HierarchyElement(address,ObjHierarchyLevel.ADDRESS);
 	        		hierarchy.addHierarchyElement(elem);
 	        	}
 	        	
@@ -164,4 +164,18 @@ public class HierarchyDAO {
         return hierarchy;
 	}
 
+	public int getNumberOfLeaves() {
+    	int numberOfLeaves = 0;
+    	try (Connection con = DBAccess.getConnection()) {
+	        String query = "select count(idposition) from hierarchy";
+	        PreparedStatement ps = con.prepareStatement(query);
+	        ResultSet rs = ps.executeQuery();
+	        if (rs.next()) {
+	        	numberOfLeaves = rs.getInt("count");
+	        }
+	        con.close();
+		} catch(Exception ex) {
+		}
+		return numberOfLeaves;
+	}
 }

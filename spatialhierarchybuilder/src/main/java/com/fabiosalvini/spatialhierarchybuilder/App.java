@@ -20,21 +20,26 @@ public class App {
     	Set<Entity> entities = new EntityDAO().getAllEntities();
     	ResourceDAO rDAO = new ResourceDAO();
     	HierarchyDAO hDAO = new HierarchyDAO();
+    	System.out.println("Loading Resources...");
     	for(Entity e: entities) {
     		Set<Resource> r = rDAO.getResourcesOfEntity(e);
     		if(!r.isEmpty()) {
     			e.addResources(r);
     		}
     		Hierarchy h = hDAO.getHierarchy(e);
-    		e.setHierarchy(h);
+    		e.setObjHierarchy(h);
     	}
-    	System.out.println(entities.size());
+    	int total = entities.size();
+    	System.out.println(total);
         
-    	int count = 1;
+    	int count = 1 + hDAO.getNumberOfLeaves();
+
         for(Entity e: entities) {
+        	System.out.println("Finding Resources...");
         	ResourceSearcher.findResources(e);
+        	System.out.println("Retrieving Hierarchy...");
         	HierarchyBuilder.retrieveHierarchy(e);
-        	System.out.println(count);
+        	System.out.println(count+" / "+total);
         	count++;
         }
         

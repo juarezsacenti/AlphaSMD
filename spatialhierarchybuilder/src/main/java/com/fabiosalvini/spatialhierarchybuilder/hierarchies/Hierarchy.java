@@ -1,5 +1,6 @@
 package com.fabiosalvini.spatialhierarchybuilder.hierarchies;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -30,16 +31,16 @@ public class Hierarchy {
 		}
 	}
 	
-	public Collection<HierarchyLevel> getMissingLevels() {
-		Collection<HierarchyLevel> levels = HierarchyLevel.getAllLevels();
+	public Collection<ObjHierarchyLevel> getMissingLevels() {
+		Collection<ObjHierarchyLevel> levels = new HashSet<ObjHierarchyLevel>(Arrays.asList(ObjHierarchyLevel.values()));
 		for(HierarchyElement he : elements) {
-			HierarchyLevel l = he.getLevel();
+			ObjHierarchyLevel l = he.getLevel();
 			levels.remove(l);
 		}
 		return levels;
 	}
 	
-	public HierarchyElement getElementAtLevel(HierarchyLevel level) {
+	public HierarchyElement getElementAtLevel(ObjHierarchyLevel level) {
 		for(HierarchyElement elem : elements) {
 			if(elem.getLevel() == level) {
 				return elem;

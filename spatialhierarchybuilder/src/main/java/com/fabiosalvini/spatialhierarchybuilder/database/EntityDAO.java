@@ -16,8 +16,8 @@ public class EntityDAO {
 	public Set<Entity> getAllEntities() {
 		Set<Entity> entities = new HashSet<Entity>();
 		try (Connection con = DBAccess.getConnection()) {
-	        //String query = "select idposition, text, lat, lon from position where idposition in (select idposition from match) AND idposition not in (select idposition from position_hlevel_instance)";
-	        String query = "select idposition, text, lat, lon from position where idposition in (select idposition from match) AND idposition not in (select idposition from hierarchy)";
+	        String query = "select idposition, text, lat, lon from position where idposition in (select idposition from match)";
+	        //String query = "select idposition, text, lat, lon from position where idposition in (select idposition from match) AND idposition not in (select idposition from hierarchy)";
 	        PreparedStatement ps = con.prepareStatement(query);
 	        ResultSet rs = ps.executeQuery();
 	        while (rs.next()) {

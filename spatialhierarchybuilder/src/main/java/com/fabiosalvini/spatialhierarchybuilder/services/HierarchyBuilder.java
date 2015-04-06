@@ -3,8 +3,6 @@ package com.fabiosalvini.spatialhierarchybuilder.services;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.logging.Logger;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import com.fabiosalvini.spatialhierarchybuilder.Entity;
 import com.fabiosalvini.spatialhierarchybuilder.Utils;
@@ -12,7 +10,7 @@ import com.fabiosalvini.spatialhierarchybuilder.database.HierarchyDAO;
 import com.fabiosalvini.spatialhierarchybuilder.datasets.GADMDataset;
 import com.fabiosalvini.spatialhierarchybuilder.hierarchies.Hierarchy;
 import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyElement;
-import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevel;
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.ObjHierarchyLevel;
 import com.fabiosalvini.spatialhierarchybuilder.json.GeonamesHierarchyJSON;
 import com.fabiosalvini.spatialhierarchybuilder.resources.GADMResource;
 import com.fabiosalvini.spatialhierarchybuilder.resources.GeonamesResource;
@@ -33,21 +31,21 @@ public class HierarchyBuilder {
 	
 	public static void retrieveHierarchy(Entity e) {
 		for(Resource r : e.getResources()) {
-			if(canFindLevels(e.getHierarchy(), r)) {
-				retrieveHierarchy(e.getHierarchy(), r);
+			if(canFindLevels(e.getObjHierarchy(), r)) {
+				retrieveHierarchy(e.getObjHierarchy(), r);
 			}
 		}
 		HierarchyDAO hDAO = new HierarchyDAO();
 		try {
-			hDAO.saveHierarchy(e);
+			hDAO.saveObjHierarchy(e);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
 	}
 	
 	private static boolean canFindLevels(Hierarchy h, Resource r) {
-		Collection<HierarchyLevel> missingLevels = h.getMissingLevels();
-		missingLevels.removeAll(r.getDataset().getHierarchyLevels());
+		Collection<ObjHierarchyLevel> missingLevels = h.getMissingLevels();
+		missingLevels.removeAll(r.getDataset().getObjHierarchyLevels());
 		return missingLevels.size() > 0;
 	}
 	
@@ -111,11 +109,11 @@ public class HierarchyBuilder {
         String address = (addressIter.hasNext()) ? addressIter.next().toString() : null;
         
         if(city != null) {
-        	HierarchyElement elem = new HierarchyElement(city, HierarchyLevel.CITY);
+        	HierarchyElement elem = new HierarchyElement(city, ObjHierarchyLevel.CITY);
         	hierarchy.addHierarchyElement(elem);
         }
         if(address != null) {
-        	HierarchyElement elem = new HierarchyElement(address, HierarchyLevel.ADDRESS);
+        	HierarchyElement elem = new HierarchyElement(address, ObjHierarchyLevel.ADDRESS);
         	hierarchy.addHierarchyElement(elem);
         }
 	}
@@ -142,7 +140,7 @@ public class HierarchyBuilder {
         		levelName = type.substring(34);
         	}
         }
-        HierarchyLevel level = GADMDataset.getSingleton().getHierarchyLevelFromName(levelName);
+        ObjHierarchyLevel level = GADMDataset.getSingleton().getObjHierarchyLevelFromName(levelName);
         if(label == null || level == null) {
         	return null;
         }

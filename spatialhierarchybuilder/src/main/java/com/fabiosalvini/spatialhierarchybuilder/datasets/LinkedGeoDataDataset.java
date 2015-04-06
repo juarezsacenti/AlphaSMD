@@ -3,7 +3,8 @@ package com.fabiosalvini.spatialhierarchybuilder.datasets;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.fabiosalvini.spatialhierarchybuilder.hierarchies.HierarchyLevel;
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.CatHierarchyLevel;
+import com.fabiosalvini.spatialhierarchybuilder.hierarchies.ObjHierarchyLevel;
 
 public class LinkedGeoDataDataset implements Dataset {
 	
@@ -11,7 +12,8 @@ public class LinkedGeoDataDataset implements Dataset {
 	public static final String SPARQL_ENDPOINT = "http://linkedgeodata.org/sparql";
 	private static Set<String> SAMEAS_PROPERTIES;
 	private static Set<Dataset> LINKEDBY_DATASETS;
-	
+	private static Set<CatHierarchyLevel> CAT_LEVELS;
+
 	private static LinkedGeoDataDataset singleton = new LinkedGeoDataDataset();
 
 	private LinkedGeoDataDataset() {
@@ -20,6 +22,9 @@ public class LinkedGeoDataDataset implements Dataset {
 		SAMEAS_PROPERTIES.add("http://linkedgeodata.org/ontology/gadmSameAs");
 		LINKEDBY_DATASETS = new HashSet<Dataset>();
 		LINKEDBY_DATASETS.add(DbpediaDataset.getSingleton());
+		CAT_LEVELS = new HashSet<CatHierarchyLevel>();
+		CAT_LEVELS.add(CatHierarchyLevel.NON_LEAF);
+		CAT_LEVELS.add(CatHierarchyLevel.LEAF);
 	}
 
 	public static LinkedGeoDataDataset getSingleton() {
@@ -43,13 +48,29 @@ public class LinkedGeoDataDataset implements Dataset {
 	}
 
 	@Override
-	public Set<HierarchyLevel> getHierarchyLevels() {
-		return new HashSet<HierarchyLevel>();
+	public Set<ObjHierarchyLevel> getObjHierarchyLevels() {
+		return new HashSet<ObjHierarchyLevel>();
 	}
 	
 	@Override
-	public HierarchyLevel getHierarchyLevelFromName(String name) {
+	public ObjHierarchyLevel getObjHierarchyLevelFromName(String name) {
 		return null;
 	}
+	
+	@Override
+	public Set<CatHierarchyLevel> getCatHierarchyLevels() {
+		return CAT_LEVELS;
+	}
 
+	@Override
+	public CatHierarchyLevel getCatHierarchyLevelFromName(String name) {
+		switch(name) {
+		case "Non_Leaf":
+			return CatHierarchyLevel.NON_LEAF;
+		case "Leaf":
+			return CatHierarchyLevel.LEAF;
+		default:
+			return null;
+		}
+	}
 }

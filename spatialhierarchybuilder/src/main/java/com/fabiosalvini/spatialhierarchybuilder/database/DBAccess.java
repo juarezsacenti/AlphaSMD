@@ -9,7 +9,7 @@ public class DBAccess {
 
 	private static final Logger LOG = Logger.getLogger(DBAccess.class.getName());
 	private static final String DBCLASSNAME = "org.postgresql.Driver";
-	private static final String CONNECTION = "jdbc:postgresql://localhost:5432/result1?user=fabio";
+	private static final String CONNECTION = "jdbc:postgresql://localhost/result2";
 
 	/**
 	 * Get the connection to the database
@@ -25,7 +25,7 @@ public class DBAccess {
 
 		Connection con;
 		try	{
-			con = DriverManager.getConnection(CONNECTION);
+			con = DriverManager.getConnection(CONNECTION, "postgres", "#_postgres_&");
 		} catch (SQLException e) {
 			LOG.warning(e.fillInStackTrace().toString());
 			return null;

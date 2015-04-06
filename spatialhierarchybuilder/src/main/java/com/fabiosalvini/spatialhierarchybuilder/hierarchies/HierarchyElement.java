@@ -3,9 +3,9 @@ package com.fabiosalvini.spatialhierarchybuilder.hierarchies;
 public class HierarchyElement {
 	
 	private String name;
-	HierarchyLevel level;
+	ObjHierarchyLevel level;
 	
-	public HierarchyElement(String name, HierarchyLevel level) {
+	public HierarchyElement(String name, ObjHierarchyLevel level) {
 		super();
 		this.name = name;
 		this.level = level;
@@ -15,7 +15,7 @@ public class HierarchyElement {
 		return name;
 	}
 
-	public HierarchyLevel getLevel() {
+	public ObjHierarchyLevel getLevel() {
 		return level;
 	}
 
